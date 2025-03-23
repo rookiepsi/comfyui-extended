@@ -1,0 +1,434 @@
+{
+  "last_node_id": 85,
+  "last_link_id": 65,
+  "nodes": [
+    {
+      "id": 59,
+      "type": "PrimitiveFloat",
+      "pos": [
+        1650,
+        5075
+      ],
+      "size": [
+        300,
+        154
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            38
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveFloat"
+      },
+      "widgets_values": [
+        1,
+        0.05,
+        0,
+        1,
+        "fixed"
+      ]
+    },
+    {
+      "id": 63,
+      "type": "PreviewInteger",
+      "pos": [
+        2625,
+        4825
+      ],
+      "size": [
+        225,
+        112
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "int",
+          "type": "INT",
+          "widget": {
+            "name": "int"
+          },
+          "link": 44
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewInteger"
+      },
+      "widgets_values": [
+        0,
+        "0"
+      ]
+    },
+    {
+      "id": 64,
+      "type": "PreviewFloat",
+      "pos": [
+        2625,
+        5050
+      ],
+      "size": [
+        225,
+        112
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "widget": {
+            "name": "float"
+          },
+          "link": 45
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewFloat"
+      },
+      "widgets_values": [
+        0,
+        "0.0"
+      ]
+    },
+    {
+      "id": 66,
+      "type": "PreviewBoolean",
+      "pos": [
+        2625,
+        5500
+      ],
+      "size": [
+        225,
+        112
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "boolean",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "boolean"
+          },
+          "link": 47
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewBoolean"
+      },
+      "widgets_values": [
+        false,
+        "false"
+      ]
+    },
+    {
+      "id": 61,
+      "type": "PrimitiveBoolean",
+      "pos": [
+        1650,
+        5550
+      ],
+      "size": [
+        300,
+        82
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            41
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveBoolean"
+      },
+      "widgets_values": [
+        true,
+        "fixed"
+      ]
+    },
+    {
+      "id": 68,
+      "type": "PreviewText",
+      "pos": [
+        2625,
+        5275
+      ],
+      "size": [
+        300,
+        125
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 49
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewText"
+      },
+      "widgets_values": [
+        "",
+        "hello"
+      ]
+    },
+    {
+      "id": 60,
+      "type": "PrimitiveText",
+      "pos": [
+        1650,
+        5325
+      ],
+      "size": [
+        300,
+        125
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            40
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveText"
+      },
+      "widgets_values": [
+        "hello world!"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "UtilityExpression",
+      "pos": [
+        2100,
+        5125
+      ],
+      "size": [
+        375,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "*",
+          "shape": 7,
+          "link": 51
+        },
+        {
+          "name": "b",
+          "type": "*",
+          "shape": 7,
+          "link": 38
+        },
+        {
+          "name": "c",
+          "type": "*",
+          "shape": 7,
+          "link": 40
+        },
+        {
+          "name": "d",
+          "type": "*",
+          "shape": 7,
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            44
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            45
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            49
+          ],
+          "slot_index": 2
+        },
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            47
+          ],
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UtilityExpression"
+      },
+      "widgets_values": [
+        "split(c, \" \")[a] if d else b"
+      ]
+    },
+    {
+      "id": 58,
+      "type": "PrimitiveInteger",
+      "pos": [
+        1650,
+        4825
+      ],
+      "size": [
+        300,
+        154
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            51
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveInteger"
+      },
+      "widgets_values": [
+        0,
+        1,
+        0,
+        1000000000000000,
+        "fixed"
+      ]
+    }
+  ],
+  "links": [
+    [
+      38,
+      59,
+      0,
+      62,
+      1,
+      "*"
+    ],
+    [
+      40,
+      60,
+      0,
+      62,
+      2,
+      "*"
+    ],
+    [
+      41,
+      61,
+      0,
+      62,
+      3,
+      "*"
+    ],
+    [
+      44,
+      62,
+      0,
+      63,
+      0,
+      "INT"
+    ],
+    [
+      45,
+      62,
+      1,
+      64,
+      0,
+      "FLOAT"
+    ],
+    [
+      47,
+      62,
+      3,
+      66,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      49,
+      62,
+      2,
+      68,
+      0,
+      "STRING"
+    ],
+    [
+      51,
+      58,
+      0,
+      62,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8074081761369218,
+      "offset": [
+        -1341.9362193512816,
+        -4743.7315739623555
+      ]
+    }
+  },
+  "version": 0.4
+}

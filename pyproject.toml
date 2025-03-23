@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-extended"
+description = "Nodes for ComfyUI that extend the core functionality without adding extra dependencies."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/rookiepsi/comfyui-extended"
+
+[tool.comfy]
+PublisherId = "rookiepsi"
+DisplayName = "ComfyUI Extended"
+Icon = ""
