@@ -112,6 +112,7 @@ SAFE_FUNCTIONS = {
     "random": random.random,
     "randint": random.randint,
     "uniform": random.uniform,
+    "choice": random.choice,
     "gauss": random.gauss,
 
     # Other functions
@@ -394,7 +395,7 @@ class UtilityExpression:
 
   @classmethod
   def IS_CHANGED(cls, expression, **kwargs):
-    if re.search(r"\b(random|randint|uniform|gauss)\b", expression):
+    if re.search(r"\b(random|randint|uniform|choice|gauss)\b", expression):
       return int("NaN")
     else:
       return expression

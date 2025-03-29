@@ -182,6 +182,7 @@ If the input expression contains an error, the node will output `(0, 0.0, error,
 - `random()` - Random float between 0 and 1.
 - `randint(a, b)` - Random integer between a and b (inclusive).
 - `uniform(a, b)` - Random float between a and b.
+- `choice(list)` - Random item from list.
 - `gauss(mu, sigma)` - Random value from normal distribution.
 
 ### Other Functions
