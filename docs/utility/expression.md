@@ -180,4 +180,5 @@ If the input expression contains an error, the node will output `(0, 0.0, error,
 - `int(a)` - Convert to integer.
 - `float(a)` - Convert to float.
 - `bool(a)` - Convert to boolean.
+- `list(a, sep=",")` - Convert string into list with separator (default is comma).
 - `len(a)` - Length of a string or list.

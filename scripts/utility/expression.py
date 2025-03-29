@@ -110,6 +110,7 @@ SAFE_FUNCTIONS = {
     "int": int,
     "float": float,
     "bool": bool,
+    "list": lambda s, sep=",": [x.strip() for x in str(s).split(sep)],
     "len": len,
 }
 
