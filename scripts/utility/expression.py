@@ -270,21 +270,29 @@ class SafeEvaluator:
             raise ValueError(f"Invalid slice parameters: {e}")
         else:
           raise ValueError(f"Cannot apply slice to {type(value).__name__}")
-      elif isinstance(node.slice, ast.Name) or isinstance(node.slice, ast.Expr):
-        index = self._evaluate_node(node.slice)
-        if isinstance(value, (list, tuple, str)) and isinstance(index, int):
-          if 0 <= index < len(value):
-            return value[index]
-          else:
-            raise ValueError(
-                f"Index {index} out of range for sequence of length {len(value)}")
-        elif isinstance(value, dict) and index in value:
-          return value[index]
-        else:
-          raise ValueError(
-              f"Invalid index type or container type for subscript operation")
+      else:
+        try:
+          index = self._evaluate_node(node.slice)
 
-      raise ValueError(f"Invalid subscript operation")
+          if isinstance(value, (list, tuple, str)):
+            if isinstance(index, int):
+              if 0 <= index < len(value):
+                return value[index]
+              else:
+                raise ValueError(
+                    f"Index {index} out of range for sequence of length {len(value)}")
+            else:
+              raise ValueError(
+                  f"Index must be an integer, got {type(index).__name__}")
+          elif isinstance(value, dict):
+            if index in value:
+              return value[index]
+            else:
+              raise ValueError(f"Key {index} not found in dictionary")
+          else:
+            raise ValueError(f"Cannot index into {type(value).__name__}")
+        except Exception as e:
+          raise ValueError(f"Invalid subscript operation: {str(e)}")
 
     else:
       raise ValueError(f"Unsupported expression type: {type(node).__name__}")
