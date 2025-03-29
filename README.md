@@ -16,8 +16,8 @@ There are 2 ways to install this custom node:
 
 ### ComfyUI Manager (Recommended)
 
-1. Install [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) if you don't have it yet
-2. Find "ComfyUI Extended" in the Manager and install it
+1. Install [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) if you don't have it yet.
+2. Find "ComfyUI Extended" in the Manager and install it.
 
 ### Manual
 
@@ -51,6 +51,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the [MIT](LICENSE) license.
 
-## Contributors
+## Legends (Contributors)
 
-- [@rookiepsi](https://github.com/rookiepsi)
+- @rookiepsi
+- @robinjhuang
