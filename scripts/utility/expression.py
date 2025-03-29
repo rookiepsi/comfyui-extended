@@ -88,6 +88,14 @@ SAFE_FUNCTIONS = {
     "islower": lambda s: str(s).islower(),
     "isupper": lambda s: str(s).isupper(),
 
+    # Regex functions
+    "re_sub": lambda pattern, repl, string, count=0: re.sub(pattern, repl, string, count=count),
+    "re_search": lambda pattern, string: bool(re.search(pattern, string)),
+    "re_match": lambda pattern, string: bool(re.match(pattern, string)),
+    "re_findall": lambda pattern, string: re.findall(pattern, string),
+    "re_split": lambda pattern, string, maxsplit=0: re.split(pattern, string, maxsplit),
+    "re_escape": lambda string: re.escape(string),
+
     # Statistics and probability functions
     "mean": statistics.mean,
     "median": statistics.median,

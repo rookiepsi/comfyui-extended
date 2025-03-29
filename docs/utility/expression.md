@@ -156,6 +156,15 @@ If the input expression contains an error, the node will output `(0, 0.0, error,
 - `islower(str)` - Check if all lowercase.
 - `isupper(str)` - Check if all uppercase.
 
+### Regex Functions
+
+- `re_sub(pattern, repl, string, count=0)` - Substitute occurrences of pattern with repl.
+- `re_search(pattern, string)` - Search for pattern in string.
+- `re_match(pattern, string)` - Match pattern at the start of string.
+- `re_findall(pattern, string)` - Find all occurrences of pattern.
+- `re_split(pattern, string, maxsplit=0)` - Split string by pattern.
+- `re_escape(string)` - Escape special characters in string.
+
 ### Statistics and Probability Functions
 
 - `mean(list)` - Calculate arithmetic mean of a list of values.
