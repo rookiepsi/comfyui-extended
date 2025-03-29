@@ -24,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - `Expression` node to support function calls in subscript operation.
-- Update Github Action for Publishing to Comfy Registry by @robinjhuang in https://github.com/rookiepsi/comfyui-extended/pull/1.
+- Update Github Action for Publishing to Comfy Registry by [@robinjhuang](https://github.com/robinjhuang) in https://github.com/rookiepsi/comfyui-extended/pull/1.
 
 ## [1.0.0] - 2025-03-23
 

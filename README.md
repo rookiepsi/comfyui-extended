@@ -53,5 +53,5 @@ This project is licensed under the [MIT](LICENSE) license.
 
 ## Legends (Contributors)
 
-- @rookiepsi
-- @robinjhuang
+- [@rookiepsi](https://github.com/rookiepsi)
+- [@robinjhuang](https://github.com/robinjhuang)
