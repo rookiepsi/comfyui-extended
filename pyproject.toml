@@ -11,4 +11,4 @@ Repository = "https://github.com/rookiepsi/comfyui-extended"
 [tool.comfy]
 PublisherId = "rookiepsi"
 DisplayName = "ComfyUI Extended"
-Icon = "https://github.com/rookiepsi/comfyui-extended/blob/main/assets/icon.png"
+Icon = "https://github.com/rookiepsi/comfyui-extended/raw/main/assets/icon.png"
