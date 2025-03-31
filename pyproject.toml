@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-extended"
 description = "Nodes for ComfyUI that extend the core functionality without adding extra dependencies."
-version = "1.1.0"
+version = "1.1.1"
 license = { file = "LICENSE" }
 dependencies = []
 
