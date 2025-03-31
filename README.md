@@ -55,3 +55,4 @@ This project is licensed under the [MIT](LICENSE) license.
 
 - [@rookiepsi](https://github.com/rookiepsi)
 - [@robinjhuang](https://github.com/robinjhuang)
+- [@silveroxides](https://github.com/silveroxides)
