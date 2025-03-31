@@ -2,7 +2,7 @@ import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 
 app.registerExtension({
-  name: "comfyui-extended.primitive",
+  name: "Comfy.ExtendedPrimitive",
 
   async setup() {
     const ids = [];

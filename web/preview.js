@@ -2,7 +2,7 @@ import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 
 app.registerExtension({
-  name: "comfyui-extended.preview",
+  name: "Comfy.ExtendedPreview",
 
   setup() {
     api.addEventListener("comfyui-extended_preview", ({ detail }) => {

@@ -2,7 +2,7 @@ import { app } from "../../scripts/app.js";
 import { ComfyWidgets } from "../../scripts/widgets.js";
 
 app.registerExtension({
-  name: "comfyui-extended",
+  name: "Comfy.Extended",
 
   async beforeRegisterNodeDef(nodeType, nodeData) {
     if (nodeData.category?.startsWith("comfyui-extended/utility")) {
