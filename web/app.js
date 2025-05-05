@@ -72,5 +72,15 @@ app.registerExtension({
         }
       };
     }
+
+    if (nodeData.category === "comfyui-extended/switch") {
+      const onNodeCreated = nodeType.prototype.onNodeCreated;
+
+      nodeType.prototype.onNodeCreated = function () {
+        onNodeCreated?.apply(this, arguments);
+
+        this.size[0] = 300;
+      };
+    }
   },
 });

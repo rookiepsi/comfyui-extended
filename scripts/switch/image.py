@@ -6,10 +6,10 @@ class ImageSwitch:
             "switch": ("INT", {"default": 1, "min": 1, "max": 4, "step": 1}),
         },
         "optional": {
-            "i1": ("IMAGE", {}),
-            "i2": ("IMAGE", {}),
-            "i3": ("IMAGE", {}),
-            "i4": ("IMAGE", {}),
+            "image_1": ("IMAGE", {}),
+            "image_2": ("IMAGE", {}),
+            "image_3": ("IMAGE", {}),
+            "image_4": ("IMAGE", {}),
         }
     }
 
@@ -20,14 +20,15 @@ class ImageSwitch:
   FUNCTION = "main"
   CATEGORY = "comfyui-extended/switch"
 
-  def main(self, switch, i1=None, i2=None, i3=None, i4=None):
-    output = i1
+  def main(self, switch, image_1=None, image_2=None, image_3=None, image_4=None):
+    if (switch == 1):
+      return (image_1, {})
 
     if (switch == 2):
-      output = i2
-    elif (switch == 3):
-      output = i3
-    elif (switch == 4):
-      output = i4
+      return (image_2, {})
 
-    return (output, {})
+    if (switch == 3):
+      return (image_3, {})
+
+    if (switch == 4):
+      return (image_4, {})
