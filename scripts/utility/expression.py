@@ -286,7 +286,7 @@ class SafeEvaluator:
 
           if isinstance(value, (list, tuple, str)):
             if isinstance(index, int):
-              if 0 <= index < len(value):
+              if -len(value) <= index < len(value):
                 return value[index]
               else:
                 raise ValueError(
