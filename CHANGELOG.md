@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `Construct Mask` node.
 - `Liquify Image` node.
-- `Expression` node now supports negative indexing in subscript operation.
+- Negative index support to `Expression` node.
 - `Mask Switch` node.
 - `Image Switch` node.
 
