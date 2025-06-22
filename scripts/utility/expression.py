@@ -121,6 +121,7 @@ SAFE_FUNCTIONS = {
     "bool": bool,
     "list": lambda s, sep=",": [x.strip() for x in str(s).split(sep)],
     "len": len,
+    "index": lambda lst, value: lst.index(value) if isinstance(lst, (list, tuple, str)) else -1,
 }
 
 
