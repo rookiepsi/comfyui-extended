@@ -62,6 +62,9 @@ class rookiepsi_ConstructMask:
         strength: float = 1.0,
         antialiasing: int = 2,
     ):
+        shape_width = max(1, shape_width)
+        shape_height = max(1, shape_height)
+
         if strength == 0.0:
             return (torch.zeros((1, height, width), dtype=torch.float32),)
 
